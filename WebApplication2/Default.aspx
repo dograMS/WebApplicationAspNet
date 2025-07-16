@@ -4,8 +4,16 @@
 
 
     <div class="container" style="height:400px">
-        <asp:Label ID="lblDefaultText1" Text="" runat="server" class="m-1 h-50 d-block"/> <br />
-        <asp:Label ID="lblDefaultText2" Text="" runat="server" class="m-1 h-50 d-block"/>
+
+        <div class="text-bg-primary shadow p-2 rounded-3">
+                    <asp:Label ID="lblDefaultText1" Text="" runat="server" class="m-1 h-50 d-block"/>
+
+        </div>
+
+ <br />
+        <div class="text-bg-primary shadow p-2 rounded-3">
+            <asp:Label ID="lblDefaultText2" Text="" runat="server" class="m-1 h-50 d-block"/>
+        </div>
     </div>
 
     

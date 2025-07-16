@@ -4,9 +4,9 @@
 
 
     <div class="d-flex justify-content-center align-items-center" style="height: 70vh;">
-        <div class="text-center">
+        <div class="text-center align-content-center p-2">
             <h2>Login</h2>
-            <asp:Login ID="Login1" runat="server" CssClass="card p-4 shadow" OnAuthenticate="Login1_Authenticate">
+            <asp:Login ID="Login1" runat="server" CssClass="card shadow p-5" OnAuthenticate="Login1_Authenticate">
     <LayoutTemplate>
         <div class="form-group mb-3">
     
@@ -15,7 +15,7 @@
                 ControlToValidate="UserName" ErrorMessage="Username required" CssClass="text-danger" />
         </div>
 
-        <div class="form-group mb-3">
+        <div class="form-group">
             
             <asp:TextBox ID="Password" runat="server" TextMode="Password" CssClass="form-control" placeholder="Password"/>
             <asp:RequiredFieldValidator ID="PasswordRequired" runat="server"
@@ -23,11 +23,13 @@
         </div>
 
         <asp:Button ID="LoginButton" runat="server" CommandName="Login"
-            Text="Log In" CssClass="btn btn-primary w-100" />
+            Text="Log In" CssClass="btn btn-primary w-100" action />
 
         <div class="text-danger mt-2">
             <asp:Literal ID="FailureText" runat="server" EnableViewState="False" />
         </div>
+
+        
     </LayoutTemplate>
 </asp:Login>
 

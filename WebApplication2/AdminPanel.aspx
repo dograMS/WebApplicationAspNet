@@ -2,7 +2,9 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-
+    <div class="d-flex justify-content-end">
+        <asp:Button ID="btnLogout" class="m-2 p-1 rounded-3 text-bg-primary" Text="logout" runat="server" OnClick="btnLogout_Click" />
+    </div>
     <div class="d-flex justify-content-center align-items-center">
         <div class=" card p-4 shadow " style="width:500px">
             <h2 class="text-center">Admin Panel</h2>

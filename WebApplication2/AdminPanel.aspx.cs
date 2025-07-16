@@ -43,5 +43,11 @@ namespace WebApplication2
             Application["HeaderText"] = headerT.Text;
             Response.Redirect(Request.RawUrl);
         }
+
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            Session["Admin"] = null;
+            Response.Redirect("~/Login.aspx");
+        }
     }
 }

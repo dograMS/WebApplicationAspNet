@@ -76,10 +76,11 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>
+                <p class="text-bg-light btn-outline-light shadow p-2 rounded-3">
                     <asp:Label ID="lblFooterText" Text="" runat="server" />
+
                 </p>
-                <p style="text-align:center;">&copy; <%: DateTime.Now.Year %> 
+                <p class="p-2 shadow text-bg-light" style="text-align:center;">&copy; <%: DateTime.Now.Year %> 
                     Total Visitors : <asp:Label ID="lblVisitorCount" Text="0" runat="server" />
                 </p>
             </footer>
