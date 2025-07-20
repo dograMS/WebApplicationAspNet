@@ -15,6 +15,15 @@
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
+    <style>
+        .headerText{
+            transition: color 0.4s;
+        }
+        .headerText:hover{
+            color: white;
+        }
+    </style>
+
 </head>
 <body>
     <form runat="server">
@@ -64,9 +73,11 @@
                        
                     </ul>
                     
-                    <p class="bg-white rounded-2 p-1" style="min-width:400px"> 
-                       <asp:Label ID="lblHeaderText" Text="" runat="server" />
+                    
+                    <p class="navbar-text headerText">
+                        <asp:Label ID="lblHeaderText" Text="" runat="server" />
                     </p>
+                    
                 </div>
                 
             </div>
